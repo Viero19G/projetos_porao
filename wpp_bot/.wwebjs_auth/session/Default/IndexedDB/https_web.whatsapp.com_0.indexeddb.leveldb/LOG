@@ -1,0 +1,55 @@
+2025/06/01-11:48:17.613 275ed Reusing MANIFEST /home/iratus/Documentos/projeto_porao/wpp_bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/01-11:48:17.613 275ed Recovering log #183
+2025/06/01-11:48:17.635 275ed Reusing old log /home/iratus/Documentos/projeto_porao/wpp_bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000183.log 
+2025/06/01-11:48:19.211 275f1 Manual compaction at level-0 from '\x00\x18\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x19\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/01-11:48:19.212 275f1 Level-0 table #196: started
+2025/06/01-11:48:19.215 275f1 Level-0 table #196: 339924 bytes OK
+2025/06/01-11:48:19.216 275f1 Delete type=0 #183
+2025/06/01-11:48:19.216 275f1 Manual compaction at level-0 from '\x00\x19\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/01-11:48:20.140 275f1 Compacting 1@1 + 9@2 files
+2025/06/01-11:48:20.167 275f1 Generated table #197@1: 48376 keys, 2213598 bytes
+2025/06/01-11:48:20.180 275f1 Generated table #198@1: 3437 keys, 2126854 bytes
+2025/06/01-11:48:20.191 275f1 Generated table #199@1: 275 keys, 2123113 bytes
+2025/06/01-11:48:20.200 275f1 Generated table #200@1: 1022 keys, 2127737 bytes
+2025/06/01-11:48:20.216 275f1 Generated table #201@1: 2590 keys, 2153079 bytes
+2025/06/01-11:48:20.237 275f1 Generated table #202@1: 17652 keys, 2205427 bytes
+2025/06/01-11:48:20.262 275f1 Generated table #203@1: 35998 keys, 2263976 bytes
+2025/06/01-11:48:20.289 275f1 Generated table #204@1: 61619 keys, 2204448 bytes
+2025/06/01-11:48:20.298 275f1 Generated table #205@1: 24520 keys, 543520 bytes
+2025/06/01-11:48:20.298 275f1 Compacted 1@1 + 9@2 files => 17961752 bytes
+2025/06/01-11:48:20.299 275f1 compacted to: files[ 0 0 9 0 0 0 0 ]
+2025/06/01-11:48:20.299 275f1 Delete type=2 #186
+2025/06/01-11:48:20.299 275f1 Delete type=2 #189
+2025/06/01-11:48:20.299 275f1 Delete type=2 #188
+2025/06/01-11:48:20.299 275f1 Delete type=2 #191
+2025/06/01-11:48:20.299 275f1 Delete type=2 #196
+2025/06/01-11:48:20.299 275f1 Delete type=2 #185
+2025/06/01-11:48:20.299 275f1 Delete type=2 #193
+2025/06/01-11:48:20.299 275f1 Delete type=2 #190
+2025/06/01-11:48:20.299 275f1 Delete type=2 #187
+2025/06/01-11:48:20.299 275f1 Delete type=2 #192
+2025/06/01-11:48:34.529 275f1 Level-0 table #207: started
+2025/06/01-11:48:34.543 275f1 Level-0 table #207: 1031793 bytes OK
+2025/06/01-11:48:34.545 275f1 Delete type=0 #195
+2025/06/01-11:48:35.565 275ed Compacting 1@1 + 9@2 files
+2025/06/01-11:48:35.602 275ed Generated table #208@1: 49095 keys, 2212576 bytes
+2025/06/01-11:48:35.614 275ed Generated table #209@1: 4516 keys, 2129395 bytes
+2025/06/01-11:48:35.623 275ed Generated table #210@1: 272 keys, 2111572 bytes
+2025/06/01-11:48:35.631 275ed Generated table #211@1: 959 keys, 2126926 bytes
+2025/06/01-11:48:35.640 275ed Generated table #212@1: 2564 keys, 2153164 bytes
+2025/06/01-11:48:35.657 275ed Generated table #213@1: 17012 keys, 2200704 bytes
+2025/06/01-11:48:35.682 275ed Generated table #214@1: 36003 keys, 2261343 bytes
+2025/06/01-11:48:35.704 275ed Generated table #215@1: 54043 keys, 2198888 bytes
+2025/06/01-11:48:35.720 275ed Generated table #216@1: 47461 keys, 1032737 bytes
+2025/06/01-11:48:35.720 275ed Compacted 1@1 + 9@2 files => 18427305 bytes
+2025/06/01-11:48:35.721 275ed compacted to: files[ 0 0 9 0 0 0 0 ]
+2025/06/01-11:48:35.721 275ed Delete type=2 #205
+2025/06/01-11:48:35.721 275ed Delete type=2 #204
+2025/06/01-11:48:35.721 275ed Delete type=2 #203
+2025/06/01-11:48:35.721 275ed Delete type=2 #199
+2025/06/01-11:48:35.721 275ed Delete type=2 #202
+2025/06/01-11:48:35.721 275ed Delete type=2 #201
+2025/06/01-11:48:35.721 275ed Delete type=2 #200
+2025/06/01-11:48:35.721 275ed Delete type=2 #207
+2025/06/01-11:48:35.721 275ed Delete type=2 #198
+2025/06/01-11:48:35.721 275ed Delete type=2 #197

@@ -1,0 +1,164 @@
+{
+    "OperatingCashFlow": {
+        "CashFlowFromContinuingOperatingActivities": {
+            "NetIncomeFromContinuingOperations": {
+            },
+            "OperatingGainsLosses": {
+                "GAINLOSSONINVESTMENTSECURITIES":{},
+                "NetForeignCurrencyExchangeGainLoss": {
+                },
+                "GAINLOSSONSALEOFBUSINESS":{},
+                "EarningsLossesFromEquityInvestments": {
+                },
+                "GAINLOSSONSALEOFPPE":{},
+                "PensionAndEmployeeBenefitExpense": {
+                }
+            },
+            "DepreciationAmortizationDepletion": {
+                "Depreciation&Amortizations": {
+                    "Depreciation": {
+                    }
+                }
+            },
+            "AmortizationCashFlow": {
+                "AmortizationOfIntangibles": {
+                }
+            },
+            "DEPRECIATIONANDAMORTIZATION":{},
+            "DeferredTax": {
+                "DeferredIncomeTax": {
+                }
+            },
+            "AssetImpairmentCharge": {
+            },
+            "ProvisionandWriteOffofAssets": {
+            },
+            "STOCKBASEDCOMPENSATION":{},
+            "OtherNonCashItems": {
+            },
+            "ChangeInWorkingCapital": {
+                "ChangeInReceivables": {
+                    "CHANGESINACCOUNTRECEIVABLES":{}
+                },
+                "ChangeInInventory": {
+                },
+                "ChangeInPrepaidAssets": {
+                },
+                "ChangeInPayablesAndAccruedExpense": {
+                    "ChangeInPayable": {
+                        "ChangeInTaxPayable": {
+                            "ChangeInIncomeTaxPayable": {
+                            }
+                        },
+                        "CHANGEINACCRUEDEXPENSE":{}
+                    },
+                    "ChangeInAccountPayable": {
+                    }
+                },
+                "ChangeInOtherCurrentAssets": {
+                },
+                "ChangeInOtherCurrentLiabilities": {
+                },
+                "ChangeInOtherWorkingCapital": {
+                }
+
+            },
+            "INTERESTRECEIVEDCFO":{},
+            "INTERESTPAIDCFO":{},
+            "DIVIDENDRECEIVEDCFO":{},
+            "TaxesRefundPaid": {
+            }
+        },
+        "CashFromDiscontinuedOperatingActivities": {
+        }
+    },
+    "InvestingCashFlow": {
+        "CashFlowFromContinuingInvestingActivities": {
+            "CapitalExpenditureReported": {
+            },
+            "NetPPEPurchaseAndSale": {
+                "PurchaseOfPPE": {
+                },
+                "SALEOFPPE":{}
+            },
+            "NetIntangiblesPurchaseAndSale": {
+                "SaleofIntangibles": {
+                },
+                "PURCHASEOFINTANGIBLES":{}
+            },
+            "NetBusinessPurchaseAndSale": {
+                "PurchaseOfBusiness": {
+                },
+                "SALEOFBUSINESS":{}
+            },
+            "NetInvestmentPurchaseAndSale": {
+                "PurchaseOfInvestment": {
+                },
+                "SaleOfInvestment": {
+                }
+            },
+            "DividendsReceivedCfi": {
+            },
+            "NETINVESTMENTPROPERTIESPURCHASEANDSALE":{
+                "PURCHASEOFINVESTMENTPROPERTIES":{}
+            },
+            "NetOtherInvestingChanges": {
+            }
+        },
+        "CashFromDiscontinuedInvestingActivities": {
+        }
+    },
+    "FinancingCashFlow": {
+        "CashFlowFromContinuingFinancingActivities": {
+            "NetIssuancePaymentsofDebt": {
+                "NetLongTermDebtIssuance": {
+                    "LongTermDebtIssuance": {
+                    },
+                    "LongTermDebtPayment": {
+                    },
+                    "LONGTERMDEBTPAYMENTS":{}
+                },
+                "NETSHORTTERMDEBTISSUANCE":{
+                    "SHORTTERMDEBTISSUANCE":{},
+                    "SHORTTERMDEBTPAYMENTS":{}
+                }
+            },
+            "NetCommonStockIssuance": {
+                "CommonStockPayments": {
+                },
+                "COMMONSTOCKISSUANCE":{}
+            },
+            "CashDividendsPaid": {
+                "CommonStockDividendPaid": {
+                }
+            },
+            "InterestPaidCff": {
+            },
+            "NetOtherFinancingCharges": {
+            }
+        },
+        "CashFromDiscontinuedFinancingActivities": {
+        }
+    },
+    "EndCashPosition": {
+        "ChangesInCash": {
+        },
+        "EffectOfExchangeRateChanges": {
+        },
+        "BeginningCashPosition": {
+        }
+    },
+    "CapitalExpenditure": {
+        "CapitalExpenditureReported": {
+        }
+    },
+    "IssuanceOfDebt": {
+    },
+    "RepaymentOfDebt": {
+    },
+    "RepurchaseOfCapitalStock": {
+    },
+    "ISSUANCEOFCAPITALSTOCK":{},
+    "FreeCashFlow": {
+    }
+}

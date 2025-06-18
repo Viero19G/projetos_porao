@@ -1,0 +1,401 @@
+{
+    "TOTALASSETS": {
+        "valor": 217067000000.0,
+        "CURRENTASSETS": {
+            "valor": 32445000000.0,
+            "CASHCASHEQUIVALENTSANDSHORTTERMINVESTMENTS": {
+                "valor": 15546000000.0,
+                "CASHANDCASHEQUIVALENTS": {
+                    "valor": 12727000000.0,
+                    "CASH": {
+                        "valor": 103000000.0
+                    },
+                    "CASHEQUIVALENTS": {
+                        "valor": 12624000000.0
+                    },
+                    "CASHFINANCIAL": {
+                        "valor": 103000000.0
+                    },
+                    "CASHANDDUOFROMBANK": {
+                        "valor": 0
+                    }
+                },
+                "RESTRICTEDCASHANDINVESTMENTS": {
+                    "valor": 0
+                },
+                "MONEYMARKETINGINVEESTIMENTS": {
+                    "valor": 0,
+                    "FEDERALFUNDSSOLDANDSECURITIESPURCHASEDUNDERAGREEMENTSTORESELL": {
+                        "valor": 0,
+                        "SECURITYAGREETOBERESOLD": {
+                            "valor": 0
+                        }
+                    }
+                },
+                "OTHERSHORTTERMINVESTMENTS": {
+                    "valor": 2819000000.0
+                }
+            },
+            "RECEIVABLES": {
+                "valor": 7313000000.0,
+                "ACCOUNTSRECEIVABLE": {
+                    "valor": 6135000000.0,
+                    "GROSSACCOUNTSRECEIVABLE": {
+                        "valor": 0
+                    },
+                    "ALLOWANCEFORDOUBTFULACCOUNTSRECEIVABLE": {
+                        "valor": 0
+                    }
+                },
+                "LOANSRECEIVABLE": {
+                    "valor": 0
+                },
+                "DUEFROMRELATEDPARTIESCURRENT": {
+                    "valor": 0
+                },
+                "TAXESRECEIVABLE": {
+                    "valor": 1178000000.0
+                },
+                "OTHERRECEIVABLES": {
+                    "valor": 0
+                }
+            },
+            "INVENTORY": {
+                "valor": 7681000000.0,
+                "RAWMATERIALS": {
+                    "valor": 1383000000.0
+                },
+                "OTHERINVENTORIES": {
+                    "valor": 0
+                },
+                "INVENTORIESADJUSTMENTSALLOWANCES": {
+                    "valor": 0
+                },
+                "WORKINPROCESS": {
+                    "valor": 0
+                },
+                "FINISHEDGOODS": {
+                    "valor": 6298000000.0
+                }
+            },
+            "RESTRICTEDCASH": {
+                "valor": 0.0
+            },
+            "PREPAIDASSETS": {
+                "valor": 0
+            },
+            "ASSETSHELDFORSALECURRENT": {
+                "valor": 335000000.0
+            },
+            "HEDGINGASSETSCURRENT": {
+                "valor": 0
+            },
+            "OTHERCURRENTASSETS": {
+                "valor": 1570000000.0,
+                "NONCURRENTPREPAIDASSETS": {
+                    "valor": 0.0
+                }
+            }
+        },
+        "TOTALNONCURRENTASSETS": {
+            "valor": 184622000000.0,
+            "NETPPE": {
+                "valor": 153424000000.0,
+                "GROSSPPE": {
+                    "valor": 273912000000.0,
+                    "MINERALPROPERTIES": {
+                        "valor": 74809000000.0
+                    },
+                    "LANDANDIMPROVEMENTS": {
+                        "valor": 4634000000.0
+                    },
+                    "BUILDINGSANDIMPROVEMENTS": {
+                        "valor": 0
+                    },
+                    "MACHINERYFURNITUREEQUIPMENT": {
+                        "valor": 18000000000.0
+                    },
+                    "OTHERPROPERTIES": {
+                        "valor": 142032000000.0
+                    },
+                    "PROPERTIES": {
+                        "valor": 0
+                    },
+                    "CONSTRUCTIONINPROGRESS": {
+                        "valor": 31467000000.0
+                    },
+                    "LEASES": {
+                        "valor": 2970000000.0
+                    }
+                },
+                "ACCUMULATEDDEPRECIATION": {
+                    "valor": -120488000000.0
+                }
+            },
+            "GOODWILLANDOTHERINTANGIBLEASSETS": {
+                "valor": 3042000000.0,
+                "GOODWILL": {
+                    "valor": 25000000.0
+                },
+                "OTHERINTANGIBLEASSETS": {
+                    "valor": 3017000000.0
+                }
+            },
+            "DEFINEDPENSIONBENEFIT": {
+                "valor": 0
+            },
+            "FINANCIALASSETS": {
+                "valor": 0
+            },
+            "INVESTMENTPROPERTIES": {
+                "valor": 0
+            },
+            "INVESTMENTSANDADVANCES": {
+                "valor": 3767000000.0,
+                "LONGTERMEQUITYINVEST": {
+                    "valor": 0,
+                    "LONGTERMEQUITYINVESTMENT": {
+                        "valor": 1354000000.0,
+                        "INVESTMENTSINOTHERVENTURESUNDEREQUITYMETHOD": {
+                            "valor": 0
+                        }
+                    },
+                    "INVESTMENTSINJOINTVENTURESATCOST": {
+                        "valor": 481000000.0
+                    },
+                    "INVESTMENTSINASSOCIATESATCOST": {
+                        "valor": 873000000.0
+                    }
+                },
+                "INVESTMENTINFINANCIALASSETS": {
+                    "valor": 2409000000.0,
+                    "FINANCIALASSETSDESIGNATEDASFAIRVALUETHROUGHPROFITORLOSSTOTAL": {
+                        "valor": 0
+                    },
+                    "HELDTOMATURITYSECURITIES": {
+                        "valor": 0
+                    },
+                    "AVAILABLEFORSALESECURITIES": {
+                        "valor": 2409000000.0
+                    }
+                },
+                "OTHERINVESTMENTS": {
+                    "valor": 4000000.0
+                }
+            },
+            "NONCURRENTACCOUNTSRECEIVABLE": {
+                "valor": 6363000000.0
+            },
+            "NONCURRENTNOTERECEIVABLES": {
+                "valor": 0
+            },
+            "NONCURRENTDEFERREDASSETS": {
+                "valor": 965000000.0,
+                "NONCURRENTDEFERREDTAXESASSETS": {
+                    "valor": 965000000.0
+                }
+            },
+            "DUEFROMRELATEDPARTIESNONCURRENT": {
+                "valor": 0
+            },
+            "OTHERNONCURRENTASSETS": {
+                "valor": 17061000000.0
+            }
+        }
+    },
+    "TOTALLIABILITIESNETMINORITYINTEREST": {
+        "valor": 138092000000.0,
+        "CURRENTLIABILITIES": {
+            "valor": 33860000000.0,
+            "PAYABLESANDACCRUEDEXPENSES": {
+                "valor": 13818000000.0,
+                "PAYABLES": {
+                    "valor": 13818000000.0,
+                    "ACCOUNTSPAYABLE": {
+                        "valor": 4813000000.0
+                    },
+                    "TOTALTAXPAYABLE": {
+                        "valor": 5466000000.0,
+                        "INCOMETAXPAYABLE": {
+                            "valor": 1300000000.0
+                        }
+                    },
+                    "DIVIDENDSPAYABLE": {
+                        "valor": 3539000000.0
+                    },
+                    "DUETORELATEDPARTIESCURRENT": {
+                        "valor": 0
+                    },
+                    "OTHERPAYABLE": {
+                        "valor": 0
+                    }
+                },
+                "CURRENTACCRUEDEXPENSES": {
+                    "valor": 0
+                }
+            },
+            "CURRENTPROVISIONS": {
+                "valor": 2032000000.0
+            },
+            "PENSIONANDOTHERPOSTRETIREMENTBENEFITPLANSCURRENT": {
+                "valor": 2932000000.0
+            },
+            "CURRENTDEBTANDCAPITALLEASEOBLIGATION": {
+                "valor": 11522000000.0,
+                "CURRENTDEBT": {
+                    "valor": 4322000000.0,
+                    "OTHERCURRENTBORROWINGS": {
+                        "valor": 4322000000.0
+                    },
+                    "LINEOFCREDIT": {
+                        "valor": 0
+                    }
+                },
+                "CURRENTCAPITALLEASEOBLIGATION": {
+                    "valor": 7200000000.0
+                },
+                "CURRENTDEFERREDLIABILITIES": {
+                    "valor": 0,
+                    "CURRENTDEFERREDREVENUE": {
+                        "valor": 0
+                    }
+                }
+            },
+            "OTHERCURRENTLIABILITIES": {
+                "valor": 3556000000.0
+            }
+        },
+        "TOTALNONCURRENTLIABILITIESNETMINORITYINTEREST": {
+            "valor": 104232000000.0,
+            "LONGTERMPROVISIONS": {
+                "valor": 24476000000.0
+            },
+            "LONGTERMDEBTANDCAPITALLEASEOBLIGATION": {
+                "valor": 51078000000.0,
+                "LONGTERMDEBT": {
+                    "valor": 24479000000.0
+                },
+                "LONGTERMCAPITALLEASEOBLIGATION": {
+                    "valor": 26599000000.0
+                }
+            },
+            "NONCURRENTDEFERREDLIABILITIES": {
+                "valor": 10910000000.0,
+                "NONCURRENTDEFERREDTAXESLIABILITIES": {
+                    "valor": 10910000000.0
+                },
+                "NONCURRENTDEFERREDREVENUE": {
+                    "valor": 0
+                }
+            },
+            "TRADEANDOTHERPAYABLESNONCURRENT": {
+                "valor": 299000000.0
+            },
+            "EMPLOYEEBENEFITS": {
+                "valor": 15579000000.0,
+                "NONCURRENTPENSIONANDOTHERPOSTRETIREMENTBENEFITPLANS": {
+                    "valor": 0.0
+                }
+            },
+            "NONCURRENTACCRUEDEXPENSES": {
+                "valor": 0
+            },
+            "DERIVATIVEPRODUCTLIABILITIES": {
+                "valor": 0
+            },
+            "DUETORELATEDPARTIESNONCURRENT": {
+                "valor": 0
+            },
+            "OTHERNONCURRENTLIABILITIES": {
+                "valor": 1890000000.0
+            }
+        }
+    },
+    "TOTALEQUITYGROSSMINORITYINTEREST": {
+        "valor": 78975000000.0,
+        "STOCKHOLDERSEQUITY": {
+            "valor": 78583000000.0,
+            "CAPITALSTOCK": {
+                "valor": 107101000000.0,
+                "COMMONSTOCK": {
+                    "valor": 107101000000.0
+                },
+                "PREFERREDSTOCK": {
+                    "valor": 0
+                }
+            },
+            "TREASURYSTOCK": {
+                "valor": 0
+            },
+            "RETAINEDEARNINGS": {
+                "valor": 0
+            },
+            "ADDITIONALPAIDINCAPITAL": {
+                "valor": 0
+            },
+            "OTHEREQUITYINTEREST": {
+                "valor": 0
+            },
+            "GAINSLOSSESNOTAFFECTINGRETAINEDEARNINGS": {
+                "valor": -28518000000.0,
+                "OTHEREQUITYADJUSTMENTS": {
+                    "valor": -28518000000.0
+                }
+            }
+        },
+        "MINORITYINTEREST": {
+            "valor": 392000000.0
+        }
+    },
+    "EXTRAS": {
+        "valor": 0,
+        "TOTALCAPITALIZATION": {
+            "valor": 103062000000.0
+        },
+        "INVESTMENTSINSUBSIDIARIESATCOST": {
+            "valor": 0
+        },
+        "COMMONSTOCKEQUITY": {
+            "valor": 78583000000.0
+        },
+        "CAPITALLEASEOBLIGATIONS": {
+            "valor": 33799000000.0
+        },
+        "NETTANGIBLEASSETS": {
+            "valor": 75541000000.0
+        },
+        "WORKINGCAPITAL": {
+            "valor": -1415000000.0
+        },
+        "INVESTEDCAPITAL": {
+            "valor": 107384000000.0
+        },
+        "TANGIBLEBOOKVALUE": {
+            "valor": 75541000000.0
+        },
+        "TOTALDEBT": {
+            "valor": 62600000000.0
+        },
+        "NETDEBT": {
+            "valor": 16074000000.0
+        },
+        "SHAREISSUED": {
+            "valor": 13044496930.0
+        },
+        "ORDINARYSHARESNUMBER": {
+            "valor": 12940137261.0
+        },
+        "PREFERREDSHARESNUMBER": {
+            "valor": 0.0
+        },
+        "PREFERREDSTOCK": {
+            "valor": 0
+        },
+        "TREASURYSHARESNUMBER": {
+            "valor": 104359669.0
+        },
+        "TRADINGSECURITIES": {
+            "valor": 0
+        }
+    }
+}

@@ -1,0 +1,33 @@
+2025/06/16-21:59:12.784 11c6d Reusing MANIFEST /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/16-21:59:12.784 11c6d Recovering log #39
+2025/06/16-21:59:12.793 11c6d Reusing old log /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000039.log 
+2025/06/16-21:59:14.155 11c6c Level-0 table #44: started
+2025/06/16-21:59:14.158 11c6c Level-0 table #44: 254104 bytes OK
+2025/06/16-21:59:14.158 11c6c Delete type=0 #39
+2025/06/16-21:59:14.159 11c6d Manual compaction at level-0 from '\x00\x17\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x18\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/16-21:59:14.159 11c6d Level-0 table #46: started
+2025/06/16-21:59:14.160 11c6d Level-0 table #46: 601 bytes OK
+2025/06/16-21:59:14.161 11c6d Delete type=0 #43
+2025/06/16-21:59:14.161 11c6d Manual compaction at level-0 from '\x00\x18\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x19\x00\x00\x00' @ 0 : 0; will stop at '\x00\x18\x00\x00\x05' @ 69146 : 0
+2025/06/16-21:59:14.161 11c6d Compacting 1@0 + 1@1 files
+2025/06/16-21:59:14.165 11c6d Generated table #47@0: 4314 keys, 111533 bytes
+2025/06/16-21:59:14.165 11c6d Compacted 1@0 + 1@1 files => 111533 bytes
+2025/06/16-21:59:14.167 11c6d compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/16-21:59:14.167 11c6d Delete type=2 #46
+2025/06/16-21:59:14.167 11c6d Manual compaction at level-0 from '\x00\x18\x00\x00\x05' @ 69146 : 0 .. '\x00\x19\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/16-21:59:14.168 11c71 Level-0 table #49: started
+2025/06/16-21:59:14.168 11c71 Level-0 table #49: 248 bytes OK
+2025/06/16-21:59:14.170 11c71 Delete type=2 #44
+2025/06/16-21:59:14.170 11c71 Delete type=0 #45
+2025/06/16-21:59:14.170 11c71 Manual compaction at level-0 from '\x00\x19\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1a\x00\x00\x00' @ 0 : 0; will stop at '\x00\x19\x00\x00\x05' @ 69152 : 0
+2025/06/16-21:59:14.170 11c71 Compacting 1@0 + 1@1 files
+2025/06/16-21:59:14.172 11c71 Generated table #50@0: 4312 keys, 111462 bytes
+2025/06/16-21:59:14.172 11c71 Compacted 1@0 + 1@1 files => 111462 bytes
+2025/06/16-21:59:14.173 11c71 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/06/16-21:59:14.173 11c71 Delete type=2 #49
+2025/06/16-21:59:14.173 11c71 Manual compaction at level-0 from '\x00\x19\x00\x00\x05' @ 69152 : 0 .. '\x00\x1a\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/16-21:59:15.078 11c6d Compacting 1@1 + 1@2 files
+2025/06/16-21:59:15.087 11c6d Generated table #51@1: 14792 keys, 525797 bytes
+2025/06/16-21:59:15.087 11c6d Compacted 1@1 + 1@2 files => 525797 bytes
+2025/06/16-21:59:15.088 11c6d compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/06/16-21:59:15.088 11c6d Delete type=2 #47

@@ -1,0 +1,224 @@
+{
+    "TOTALREVENUE": {
+        "valor": 83966000000.0,
+        "OPERATINGREVENUE": {
+            "valor": 83966000000.0
+        },
+        "EXCISETAXES": {
+            "valor": 0
+        }
+    },
+    "COSTOFREVENUE": {
+        "valor": 43164000000.0
+    },
+    "GROSSPROFIT": {
+        "valor": 40802000000.0
+    },
+    "OPERATINGEXPENSE": {
+        "valor": 9801000000.0,
+        "OPERATIONANDMAINTENANCE": {
+            "valor": 1362000000.0
+        },
+        "SELLINGGENERALANDADMINISTRATION": {
+            "valor": 6782000000.0,
+            "TOTALOPERATINGEXPENSE": {
+                "valor": 0,
+                "GENERALANDADMINISTRATIVEEXPENSE": {
+                    "valor": 6782000000.0,
+                    "SALARIESANDWAGES": {
+                        "valor": 2984000000.0
+                    },
+                    "RENTANDLANDINGFEES": {
+                        "valor": 3798000000.0
+                    },
+                    "INSURANCEANDCLAIMS": {
+                        "valor": 0
+                    },
+                    "OTHERGANDA": {
+                        "valor": 256000000.0
+                    }
+                },
+                "SELLINGANDMARKETINGEXPENSE": {
+                    "valor": 4229000000.0
+                }
+            },
+            "RECONCILEDCOSTOFREVENUE": {
+                "valor": 32165000000.0
+            }
+        },
+        "DEPRECIATIONANDAMORTIZATIONININCOMESTATEMENT": {
+            "valor": 0
+        },
+        "RESEARCHANDDEVELOPMENT": {
+            "valor": 563000000.0
+        },
+        "DEPRECIATIONINCOMESTATEMENT": {
+            "valor": 0
+        },
+        "DEPRECIATIONAMORTIZATIONDEPLETIONINCOMESTATEMENT": {
+            "valor": 696000000.0
+        },
+        "PROVISIONFORDOUBTFULACCOUNTS": {
+            "valor": -12000000.0
+        },
+        "OTHERTAXES": {
+            "valor": -112000000.0
+        },
+        "OTHEROPERATINGEXPENSES": {
+            "valor": 522000000.0
+        }
+    },
+    "OPERATINGINCOME": {
+        "valor": 31001000000.0
+    },
+    "NETNONOPERATINGINTERESTINCOMEEXPENSE": {
+        "valor": -4644000000.0,
+        "INTERESTINCOMENONOPERATING": {
+            "valor": 2820039200.0
+        },
+        "INTERESTEXPENSENONOPERATING": {
+            "valor": 4977000000.0
+        },
+        "TOTALOTHERFINANCECOST": {
+            "valor": -333000000.0
+        }
+    },
+    "OTHERINCOMEEXPENSE": {
+        "valor": 1868000000.0,
+        "GAINONSALEOFSECURITY": {
+            "valor": -6919000000.0
+        },
+        "EARNINGSFROMEQUITYINTEREST": {
+            "valor": 1607000000.0
+        },
+        "SPECIALINCOMECHARGES": {
+            "valor": 5558000000.0,
+            "RESTRUCTURINGANDMERGERNACQUISITION": {
+                "valor": -631000000.0
+            },
+            "IMPAIRMENTOFCAPITALASSETS": {
+                "valor": -3190000000.0
+            },
+            "WRITEOFF": {
+                "valor": -3190000000.0
+            },
+            "OTHERSPECIALCHARGES": {
+                "valor": 204000000.0
+            },
+            "GAINONSALEOFBUSINESS": {
+                "valor": -41000000.0
+            },
+            "GAINONSALEOFPPE": {
+                "valor": 1941000000.0
+            }
+        },
+        "OTHERNONOPERATINGINCOMEEXPENSES": {
+            "valor": 1622000000.0
+        }
+    },
+    "PRETAXINCOME": {
+        "valor": 28225000000.0
+    },
+    "TAXPROVISION": {
+        "valor": 8239000000.0
+    },
+    "NETINCOMECOMMONSTOCKHOLDERS": {
+        "valor": 19875000000.0,
+        "NETINCOME": {
+            "valor": 19875000000.0,
+            "NETINCOMEINCLUDINGNONCONTROLLINGINTERESTS": {
+                "valor": 19986000000.0,
+                "NETINCOMECONTINUOUSOPERATIONS": {
+                    "valor": 19986000000.0
+                },
+                "NETINCOMEDISCONTINUOUSOPERATIONS": {
+                    "valor": 0.0
+                }
+            },
+            "MINORITYINTERESTS": {
+                "valor": -111000000.0
+            }
+        }
+    },
+    "DILUTEDNIAVAILTOCOMSTOCKHOLDERS": {
+        "valor": 19875000000.0
+    },
+    "BASICEPS": {
+        "valor": 1.52
+    },
+    "AVERAGEDILUTIONEARNINGS": {
+        "valor": 0
+    },
+    "DILUTEDEPS": {
+        "valor": 1.52
+    },
+    "TOTALOPERATINGINCOMEASREPORTED": {
+        "valor": 0
+    },
+    "BASICAVERAGESHARES": {
+        "valor": 13044201261.0
+    },
+    "DILUTEDAVERAGESHARES": {
+        "valor": 13044201261.0
+    },
+    "RENTEXPENSESUPPLEMENTAL": {
+        "valor": 3798000000.0
+    },
+    "TOTALEXPENSES": {
+        "valor": 52965000000.0
+    },
+    "INTERESTINCOME": {
+        "valor": 2820039200.0
+    },
+    "INTERESTEXPENSE": {
+        "valor": 4977000000.0
+    },
+    "NETINTERESTINCOME": {
+        "valor": -4644000000.0
+    },
+    "NETINCOMEFROMCONTINUINGANDDISCONTINUEDOPERATION": {
+        "valor": 19875000000.0
+    },
+    "NORMALIZEDINCOME": {
+        "valor": 20838718193.091232
+    },
+    "EBIT": {
+        "valor": 33202000000.0
+    },
+    "EBITDA": {
+        "valor": 44897000000.0
+    },
+    "RECONCILEDCOSTOFREVENUE": {
+        "valor": 32165000000.0
+    },
+    "RECONCILEDDEPRECIATION": {
+        "valor": 11695000000.0
+    },
+    "NETINCOMEFROMCONTINUINGOPERATIONNETMINORITYINTEREST": {
+        "valor": 19875000000.0
+    },
+    "TOTALUNUSUALITEMSEXCLUDINGGOODWILL": {
+        "valor": -1361000000.0
+    },
+    "TOTALUNUSUALITEMS": {
+        "valor": -1361000000.0
+    },
+    "NORMALIZEDEBITDA": {
+        "valor": 46258000000.0
+    },
+    "TAXRATEFORCALCS": {
+        "valor": 0.291904
+    },
+    "TAXEFFECTOFUNUSUALITEMS": {
+        "valor": -397281806.908769
+    },
+    "EXTRAS": {
+        "valor": 0,
+        "AMORTIZATION": {
+            "valor": 0
+        },
+        "OTHERUNDERPREFERREDSTOCKDIVIDEND": {
+            "valor": 0
+        }
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "TotalRevenue": {
+        "OperatingRevenue": {},
+        "EXCISETAXES":{}
+    },
+    "CostOfRevenue": {},
+    "GrossProfit": {},
+    "OperatingExpense": {
+        "OperationAndMaintenance": {},
+        "SellingGeneralAndAdministration": {
+            "TotalOperatingExpense": {
+                "GeneralAndAdministrativeExpense": {
+                    "SalariesAndWages": {},
+                    "RentAndLandingFees": {},
+                    "INSURANCEANDCLAIMS":{},
+                    "OtherGandA": {}
+                },
+                "SellingAndMarketingExpense": {}
+            },
+            "ReconciledCostOfRevenue": {}
+        },
+        "DEPRECIATIONANDAMORTIZATIONININCOMESTATEMENT":{},
+        "ResearchAndDevelopment":{},
+        "DEPRECIATIONINCOMESTATEMENT":{},
+        "DepreciationAmortizationDepletionIncomeStatement":{},
+        "ProvisionForDoubtfulAccounts":{},
+        "OtherTaxes":{},
+        "OtherOperatingExpenses": {}
+    },
+    "OperatingIncome": {},
+    "NetNonOperatingInterestIncomeExpense":{
+        "InterestIncomeNonOperating":{},
+        "InterestExpenseNonOperating":{},
+        "TotalOtherFinanceCost":{}
+    },
+    "OtherIncomeExpense":{
+            "GainOnSaleOfSecurity":{},
+            "EarningsFromEquityInterest":{},
+            "SpecialIncomeCharges":{
+                "RestructuringAndMergernAcquisition":{},
+                "ImpairmentOfCapitalAssets":{},
+                "WriteOff":{},
+                "OtherSpecialCharges":{},
+                "GainOnSaleOfBusiness":{},
+                "GainOnSaleOfPpe":{}
+            },
+            "OtherNonOperatingIncomeExpenses":{}
+    },
+    "PretaxIncome":{},
+    "TaxProvision":{},
+    "NetIncomeCommonStockholders": {
+        "NetIncome": {
+            "NetIncomeIncludingNoncontrollingInterests":{
+                "NetIncomeContinuousOperations":{},
+                "NetIncomeDiscontinuousOperations":{}
+            },
+            "MinorityInterests":{}
+        }
+    },
+    "DilutedNIAvailtoComStockholders":{},
+    "BasicEPS":{},
+    "AVERAGEDILUTIONEARNINGS":{},
+    "DilutedEPS":{},
+    "TOTALOPERATINGINCOMEASREPORTED":{},
+    "BasicAverageShares":{},
+    "DilutedAverageShares":{},
+    "RentExpenseSupplemental":{},
+    "TotalExpenses":{},
+    "InterestIncome":{},
+    "InterestExpense":{},
+    "NetInterestIncome":{},
+    "NetIncomeFromContinuingAndDiscontinuedOperation":{},
+    "NormalizedIncome":{},
+    "EBIT":{},
+    "EBITDA":{},
+    "ReconciledCostOfRevenue":{},
+    "ReconciledDepreciation":{},
+    "NetIncomeFromContinuingOperationNetMinorityInterest":{},
+    "TotalUnusualItemsExcludingGoodwill":{},
+    "TotalUnusualItems":{},
+    "NormalizedEBITDA":{},
+    "TaxRateForCalcs":{},
+    "TaxEffectOfUnusualItems":{},
+    "extras":{
+        "AMORTIZATION":{},
+        "OTHERUNDERPREFERREDSTOCKDIVIDEND":{}
+    }
+}

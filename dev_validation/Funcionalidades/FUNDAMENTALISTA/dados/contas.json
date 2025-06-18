@@ -1,0 +1,173 @@
+{
+    "TotalAssets": {
+        "CurrentAssets":{
+            "CashCashEquivalentsAndShortTermInvestments":{
+                "CashAndCashEquivalents": {
+                    "Cash": {},
+                    "CashEquivalents": {},
+                    "CashFinancial": {},  
+                    "CASHANDDUOFROMBANK":{}
+                },
+                "RESTRICTEDCASHANDINVESTMENTS":{},
+                "MONEYMARKETINGINVEESTIMENTS":{
+                    "FEDERALFUNDSSOLDANDSECURITIESPURCHASEDUNDERAGREEMENTSTORESELL":{
+                        "SECURITYAGREETOBERESOLD":{}
+                    }
+                },
+                "OtherShortTermInvestments": {}
+            },
+            "Receivables":{
+                "AccountsReceivable": {
+                    "GrossAccountsReceivable":{},
+                    "AllowanceForDoubtfulAccountsReceivable":{}
+                    
+                },
+                "LOANSRECEIVABLE":{},
+                "DUEFROMRELATEDPARTIESCURRENT":{},
+                "TaxesReceivable": {},
+                "OtherReceivables":{}
+            },
+            "Inventory": {
+                "RawMaterials": {},
+                "OtherInventories":{},
+                "InventoriesAdjustmentsAllowances":{},
+                "WORKINPROCESS":{},
+                "FinishedGoods": {}
+            },
+            "RESTRICTEDCASH":{},
+            "PREPAIDASSETS":{},
+            "AssetsHeldForSaleCurrent": {},
+            "HedgingAssetsCurrent":{},
+            "OtherCurrentAssets": {
+                
+                "NONCURRENTPREPAIDASSETS":{}
+            }
+        },
+        "TotalNonCurrentAssets":{
+            "NetPPE":{
+                "GrossPPE": {
+                    "MineralProperties": {},
+                    "LandAndImprovements": {},
+                    "BuildingsAndImprovements":{},
+                    "MachineryFurnitureEquipment": {},
+                    "OtherProperties": {},
+                    "Properties":{},
+                    "ConstructionInProgress": {},
+                    "Leases": {}
+                },
+                "AccumulatedDepreciation": {}
+            },
+            "GoodwillAndOtherIntangibleAssets": {
+                "Goodwill": {},
+                "OtherIntangibleAssets": {}
+            },
+            "DefinedPensionBenefit":{},
+            "FinancialAssets":{},
+            "InvestmentProperties":{},
+            "InvestmentsAndAdvances":{
+                "LongTermEquityInvest":{
+                    "LongTermEquityInvestment":{
+                        "INVESTMENTSINOTHERVENTURESUNDEREQUITYMETHOD":{}
+                    },
+                    "InvestmentsinJointVenturesatCost": {},
+                    "InvestmentsinAssociatesatCost":{}
+                },
+                "InvestmentInFinancialAssets": {
+                    "FINANCIALASSETSDESIGNATEDASFAIRVALUETHROUGHPROFITORLOSSTOTAL":{},
+                    "HELDTOMATURITYSECURITIES":{},
+                    "AvailableForSaleSecurities": {}
+                },
+                "OtherInvestments": {}
+            },
+            "NonCurrentAccountsReceivable": {},
+            "NONCURRENTNOTERECEIVABLES":{},
+            "NonCurrentDeferredAssets":{
+                "NonCurrentDeferredTaxesAssets":{}
+            },
+            "DuefromRelatedPartiesNonCurrent":{},
+            "OtherNonCurrentAssets": {}
+        }
+    },
+    "TotalLiabilitiesNetMinorityInterest":{
+        "CurrentLiabilities":{
+            "PayablesAndAccruedExpenses":{
+                "Payables":{
+                    "AccountsPayable":{},
+                    "TotalTaxPayable":{
+                        "IncomeTaxPayable":{}
+                    },
+                    "DividendsPayable":{},
+                    "DuetoRelatedPartiesCurrent":{},
+                    "OtherPayable":{}
+                },
+                "CurrentAccruedExpenses":{}
+            },
+            "CurrentProvisions":{},
+            "PensionandOtherPostRetirementBenefitPlansCurrent":{},
+            "CurrentDebtAndCapitalLeaseObligation":{
+                "CurrentDebt":{
+                    "OtherCurrentBorrowings":{},
+                    "LINEOFCREDIT":{}
+                },
+                "CurrentCapitalLeaseObligation":{},
+                "CurrentDeferredLiabilities":{
+                    "CurrentDeferredRevenue":{}
+                }
+            },
+            "OtherCurrentLiabilities":{}
+        },
+        "TotalNonCurrentLiabilitiesNetMinorityInterest":{
+            "LongTermProvisions":{},
+            "LongTermDebtAndCapitalLeaseObligation":{
+                "LongTermDebt":{},
+                "LongTermCapitalLeaseObligation":{}
+            },
+            "NonCurrentDeferredLiabilities":{
+                "NonCurrentDeferredTaxesLiabilities":{},
+                "NonCurrentDeferredRevenue":{}
+            },
+            "TradeandOtherPayablesNonCurrent":{},
+            "EmployeeBenefits":{
+                "NonCurrentPensionAndOtherPostretirementBenefitPlans":{}
+            },
+            "NONCURRENTACCRUEDEXPENSES":{},
+            "DERIVATIVEPRODUCTLIABILITIES":{},
+            "DuetoRelatedPartiesNonCurrent":{},
+            "OtherNonCurrentLiabilities":{}
+        }
+    },
+    "TotalEquityGrossMinorityInterest":{
+        "StockholdersEquity":{
+            "CapitalStock":{
+                "CommonStock":{},
+                "PREFERREDSTOCK":{}
+            },
+            "TreasuryStock":{},
+            "RetainedEarnings":{},
+            "AdditionalPaidInCapital":{},
+            "OtherEquityInterest":{},
+            "GainsLossesNotAffectingRetainedEarnings":{
+                "OtherEquityAdjustments":{}
+            }
+        },
+        "MinorityInterest":{}
+    },
+    "extras":{
+        "TotalCapitalization":{},
+        "INVESTMENTSINSUBSIDIARIESATCOST":{},
+        "CommonStockEquity" :{},
+        "CapitalLeaseObligations":{}, 
+        "NetTangibleAssets" :{},
+        "WorkingCapital":{},
+        "InvestedCapital":{},
+        "TangibleBookValue" :{},
+        "TotalDebt":{},
+        "NetDebt":{},
+        "ShareIssued":{},
+        "OrdinarySharesNumber":{}, 
+        "PreferredSharesNumber" :{},
+        "PREFERREDSTOCK":{},
+        "TreasurySharesNumber" :{},
+        "TRADINGSECURITIES" :{}
+    }
+}

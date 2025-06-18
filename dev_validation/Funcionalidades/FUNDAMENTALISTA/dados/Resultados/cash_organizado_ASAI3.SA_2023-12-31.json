@@ -1,0 +1,272 @@
+{
+    "OPERATINGCASHFLOW": {
+        "valor": 5963000000.0,
+        "CASHFLOWFROMCONTINUINGOPERATINGACTIVITIES": {
+            "valor": 5963000000.0,
+            "NETINCOMEFROMCONTINUINGOPERATIONS": {
+                "valor": 710000000.0
+            },
+            "OPERATINGGAINSLOSSES": {
+                "valor": -86000000.0,
+                "GAINLOSSONINVESTMENTSECURITIES": {
+                    "valor": 20000000.0
+                },
+                "NETFOREIGNCURRENCYEXCHANGEGAINLOSS": {
+                    "valor": 0
+                },
+                "GAINLOSSONSALEOFBUSINESS": {
+                    "valor": 0
+                },
+                "EARNINGSLOSSESFROMEQUITYINVESTMENTS": {
+                    "valor": -51000000.0
+                },
+                "GAINLOSSONSALEOFPPE": {
+                    "valor": -55000000.0
+                },
+                "PENSIONANDEMPLOYEEBENEFITEXPENSE": {
+                    "valor": 0
+                }
+            },
+            "DEPRECIATIONAMORTIZATIONDEPLETION": {
+                "valor": 1476000000.0,
+                "DEPRECIATION&AMORTIZATIONS": {
+                    "valor": 0,
+                    "DEPRECIATION": {
+                        "valor": 1426000000.0
+                    }
+                }
+            },
+            "AMORTIZATIONCASHFLOW": {
+                "valor": 50000000.0,
+                "AMORTIZATIONOFINTANGIBLES": {
+                    "valor": 50000000.0
+                }
+            },
+            "DEPRECIATIONANDAMORTIZATION": {
+                "valor": 1476000000.0
+            },
+            "DEFERREDTAX": {
+                "valor": -162000000.0,
+                "DEFERREDINCOMETAX": {
+                    "valor": -162000000.0
+                }
+            },
+            "ASSETIMPAIRMENTCHARGE": {
+                "valor": 0
+            },
+            "PROVISIONANDWRITEOFFOFASSETS": {
+                "valor": 693000000.0
+            },
+            "STOCKBASEDCOMPENSATION": {
+                "valor": 20000000.0
+            },
+            "OTHERNONCASHITEMS": {
+                "valor": 2853000000.0
+            },
+            "CHANGEINWORKINGCAPITAL": {
+                "valor": 459000000.0,
+                "CHANGEINRECEIVABLES": {
+                    "valor": -288000000.0,
+                    "CHANGESINACCOUNTRECEIVABLES": {
+                        "valor": -640000000.0
+                    }
+                },
+                "CHANGEININVENTORY": {
+                    "valor": -735000000.0
+                },
+                "CHANGEINPREPAIDASSETS": {
+                    "valor": 0
+                },
+                "CHANGEINPAYABLESANDACCRUEDEXPENSE": {
+                    "valor": 1578000000.0,
+                    "CHANGEINPAYABLE": {
+                        "valor": 1538000000.0,
+                        "CHANGEINTAXPAYABLE": {
+                            "valor": 40000000.0,
+                            "CHANGEININCOMETAXPAYABLE": {
+                                "valor": 40000000.0
+                            }
+                        },
+                        "CHANGEINACCRUEDEXPENSE": {
+                            "valor": 40000000.0
+                        }
+                    },
+                    "CHANGEINACCOUNTPAYABLE": {
+                        "valor": 1498000000.0
+                    }
+                },
+                "CHANGEINOTHERCURRENTASSETS": {
+                    "valor": -14000000.0
+                },
+                "CHANGEINOTHERCURRENTLIABILITIES": {
+                    "valor": -114000000.0
+                },
+                "CHANGEINOTHERWORKINGCAPITAL": {
+                    "valor": 32000000.0
+                }
+            },
+            "INTERESTRECEIVEDCFO": {
+                "valor": 0
+            },
+            "INTERESTPAIDCFO": {
+                "valor": 0
+            },
+            "DIVIDENDRECEIVEDCFO": {
+                "valor": 20000000.0
+            },
+            "TAXESREFUNDPAID": {
+                "valor": 0.0
+            }
+        },
+        "CASHFROMDISCONTINUEDOPERATINGACTIVITIES": {
+            "valor": 0
+        }
+    },
+    "INVESTINGCASHFLOW": {
+        "valor": -3055000000.0,
+        "CASHFLOWFROMCONTINUINGINVESTINGACTIVITIES": {
+            "valor": -3055000000.0,
+            "CAPITALEXPENDITUREREPORTED": {
+                "valor": 0
+            },
+            "NETPPEPURCHASEANDSALE": {
+                "valor": -3097000000.0,
+                "PURCHASEOFPPE": {
+                    "valor": -3116000000.0
+                },
+                "SALEOFPPE": {
+                    "valor": 19000000.0
+                }
+            },
+            "NETINTANGIBLESPURCHASEANDSALE": {
+                "valor": -169000000.0,
+                "SALEOFINTANGIBLES": {
+                    "valor": 0
+                },
+                "PURCHASEOFINTANGIBLES": {
+                    "valor": -169000000.0
+                }
+            },
+            "NETBUSINESSPURCHASEANDSALE": {
+                "valor": 0.0,
+                "PURCHASEOFBUSINESS": {
+                    "valor": 0.0
+                },
+                "SALEOFBUSINESS": {
+                    "valor": 0
+                }
+            },
+            "NETINVESTMENTPURCHASEANDSALE": {
+                "valor": 0,
+                "PURCHASEOFINVESTMENT": {
+                    "valor": 0
+                },
+                "SALEOFINVESTMENT": {
+                    "valor": 0
+                }
+            },
+            "DIVIDENDSRECEIVEDCFI": {
+                "valor": 0
+            },
+            "NETINVESTMENTPROPERTIESPURCHASEANDSALE": {
+                "valor": 0.0,
+                "PURCHASEOFINVESTMENTPROPERTIES": {
+                    "valor": 0.0
+                }
+            },
+            "NETOTHERINVESTINGCHANGES": {
+                "valor": 211000000.0
+            }
+        },
+        "CASHFROMDISCONTINUEDINVESTINGACTIVITIES": {
+            "valor": 0
+        }
+    },
+    "FINANCINGCASHFLOW": {
+        "valor": -3291000000.0,
+        "CASHFLOWFROMCONTINUINGFINANCINGACTIVITIES": {
+            "valor": -3291000000.0,
+            "NETISSUANCEPAYMENTSOFDEBT": {
+                "valor": 1631000000.0,
+                "NETLONGTERMDEBTISSUANCE": {
+                    "valor": 1631000000.0,
+                    "LONGTERMDEBTISSUANCE": {
+                        "valor": 3392000000.0
+                    },
+                    "LONGTERMDEBTPAYMENT": {
+                        "valor": 0
+                    },
+                    "LONGTERMDEBTPAYMENTS": {
+                        "valor": -1761000000.0
+                    }
+                },
+                "NETSHORTTERMDEBTISSUANCE": {
+                    "valor": 0,
+                    "SHORTTERMDEBTISSUANCE": {
+                        "valor": 0
+                    },
+                    "SHORTTERMDEBTPAYMENTS": {
+                        "valor": 0
+                    }
+                }
+            },
+            "NETCOMMONSTOCKISSUANCE": {
+                "valor": 9000000.0,
+                "COMMONSTOCKPAYMENTS": {
+                    "valor": 0
+                },
+                "COMMONSTOCKISSUANCE": {
+                    "valor": 9000000.0
+                }
+            },
+            "CASHDIVIDENDSPAID": {
+                "valor": -118000000.0,
+                "COMMONSTOCKDIVIDENDPAID": {
+                    "valor": -118000000.0
+                }
+            },
+            "INTERESTPAIDCFF": {
+                "valor": -2062000000.0
+            },
+            "NETOTHERFINANCINGCHARGES": {
+                "valor": -2751000000.0
+            }
+        },
+        "CASHFROMDISCONTINUEDFINANCINGACTIVITIES": {
+            "valor": 0
+        }
+    },
+    "ENDCASHPOSITION": {
+        "valor": 5459000000.0,
+        "CHANGESINCASH": {
+            "valor": -383000000.0
+        },
+        "EFFECTOFEXCHANGERATECHANGES": {
+            "valor": 0.0
+        },
+        "BEGINNINGCASHPOSITION": {
+            "valor": 5842000000.0
+        }
+    },
+    "CAPITALEXPENDITURE": {
+        "valor": -3285000000.0,
+        "CAPITALEXPENDITUREREPORTED": {
+            "valor": 0
+        }
+    },
+    "ISSUANCEOFDEBT": {
+        "valor": 3392000000.0
+    },
+    "REPAYMENTOFDEBT": {
+        "valor": -1761000000.0
+    },
+    "REPURCHASEOFCAPITALSTOCK": {
+        "valor": 0
+    },
+    "ISSUANCEOFCAPITALSTOCK": {
+        "valor": 9000000.0
+    },
+    "FREECASHFLOW": {
+        "valor": 2678000000.0
+    }
+}
