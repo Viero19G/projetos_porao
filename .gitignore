@@ -1,0 +1,31 @@
+node_modules/
+.local-chromium/
+*.log
+.env
+dist/
+build/
+.DS_Store
+wpp_bot/node_modules/
+*/site-packages
+
+# Ignora dependências
+node_modules/
+*/node_modules/
+.local-chromium/
+*/site-packages
+
+# Ignora arquivos sensíveis
+.env
+*.log
+
+# Ignora builds
+dist/
+build/
+
+# Ignora arquivos de sistema
+.DS_Store
+
+# Outros arquivos grandes ou gerados
+*.sqlite3
+*.pyc
+*.pkl
