@@ -29,3 +29,4 @@ build/
 *.sqlite3
 *.pyc
 *.pkl
+*.env
