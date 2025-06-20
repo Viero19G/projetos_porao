@@ -1,0 +1,13 @@
+2025/06/19-21:29:22.648 3ee61 Reusing MANIFEST /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session-whatsapp-bot-jwt/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/06/19-21:29:22.648 3ee61 Recovering log #168
+2025/06/19-21:29:22.662 3ee61 Reusing old log /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session-whatsapp-bot-jwt/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000168.log 
+2025/06/19-21:29:23.976 3ee5b Level-0 table #173: started
+2025/06/19-21:29:23.978 3ee5b Level-0 table #173: 182035 bytes OK
+2025/06/19-21:29:23.979 3ee5b Delete type=0 #168
+2025/06/19-21:29:23.979 3ee5b Manual compaction at level-0 from '\x00A\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00B\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/06/19-21:29:24.927 3ee62 Compacting 1@1 + 1@2 files
+2025/06/19-21:29:24.942 3ee62 Generated table #174@1: 34220 keys, 1144172 bytes
+2025/06/19-21:29:24.943 3ee62 Compacted 1@1 + 1@2 files => 1144172 bytes
+2025/06/19-21:29:24.943 3ee62 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/06/19-21:29:24.943 3ee62 Delete type=2 #170
+2025/06/19-21:29:24.944 3ee62 Delete type=2 #173
