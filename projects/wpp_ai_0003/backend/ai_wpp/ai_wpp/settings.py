@@ -15,10 +15,16 @@ from datetime import timedelta
 from pathlib import Path
 from decouple import config, Csv
 
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Configurações do .env
 SECRET_KEY = config('SECRET_KEY')
+OPENAI_API_KEY = config('OPENAI_API_KEY')
+OPENAI_MODEL = config('OPENAI_MODEL')
+OPENAI_MAX_TOKENS = config('OPENAI_MAX_TOKENS')
+OPENAI_TEMPERATURE = config('OPENAI_TEMPERATURE')
+OPENAI_MAX_HISTORY_TURNS = config('OPENAI_MAX_HISTORY_TURNS')
 DEBUG = config('DEBUG', default=False, cast=bool)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='', cast=Csv())
 
@@ -31,8 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
+    'rest_framework_simplejwt.token_blacklist',
     'api',
 ]
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'voice_audio', # Um nome único para este cache
+    }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -115,3 +128,4 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
