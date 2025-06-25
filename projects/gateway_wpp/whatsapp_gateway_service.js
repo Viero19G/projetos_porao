@@ -1,5 +1,5 @@
 // whatsapp_gateway_service.js
-
+//Gateway de Wpp
 const { Client, LocalAuth, MessageMedia } = require('whatsapp-web.js');
 const qrcode = require('qrcode'); // Usaremos a lib qrcode para gerar base64, não qrcode-terminal
 const axios = require('axios');
