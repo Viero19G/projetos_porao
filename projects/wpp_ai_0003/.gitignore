@@ -1,5 +1,6 @@
 # .gitignore
-
+/.wwebjs_auth
+/.wwebjs_cache
 # Django
 *.log
 *.pot

@@ -7,14 +7,7 @@ const fs = require('fs').promises; // Para operações assíncronas com arquivos
 require('dotenv').config(); // Carrega as variáveis de ambiente do arquivo .env
 
 // Polifills para FormData em Node.js.
-// Certifique-se de que 'form-data' está instalado (npm install form-data)
 const FormData = require('form-data');
-// Remove a declaração global.Blob, pois enviaremos o Buffer diretamente
-// try {
-//     global.Blob = require('node:buffer').Blob; // Node.js 16+
-// } catch (e) {
-//     console.warn("node:buffer.Blob not available. If you encounter issues with FormData and Blob, consider adding 'node-fetch' or similar polyfill.");
-// }
 
 class WhatsAppOpenAIBot {
     constructor() {
@@ -352,19 +345,15 @@ Basta enviar uma mensagem de texto ou áudio e eu responderei usando IA!`;
                 const formData = new FormData();
                 formData.append('type', 'audio');
                 const audioBuffer = Buffer.from(content, 'base64');
-                // Alteração aqui: Passa o Buffer diretamente.
-                // O terceiro argumento é o nome do arquivo, que pode ser útil para a API.
+                
                 formData.append('audio_file', audioBuffer, {
-                    filename: 'audio.ogg', // Nome do arquivo que a API receberá
-                    contentType: mimeType // Tipo MIME do arquivo
+                    filename: 'audio.ogg', 
+                    contentType: mimeType 
                 });
                 formData.append('user_id', userIdNumeric);
 
                 axiosConfig.data = formData;
-                axiosConfig.headers = { ...formData.getHeaders() }; // Headers para multipart/form-data
-                // É essencial que a API retorne JSON para a resposta, não binário diretamente,
-                // a menos que você queira tratar isso separadamente no frontend com responseType: 'arraybuffer' aqui.
-                // Para este caso, a API deve retornar JSON contendo o base64 do áudio se for uma resposta de áudio.
+                axiosConfig.headers = { ...formData.getHeaders() }; 
             } else {
                 throw new Error(`Tipo de mensagem '${messageType}' não suportado para envio à API.`);
             }
@@ -373,10 +362,10 @@ Basta enviar uma mensagem de texto ou áudio e eu responderei usando IA!`;
             const contentType = response.headers['content-type'];
             console.log('Content-Type da resposta da API DRF:', contentType);
 
-            // --- Lógica de tratamento de resposta dinâmica SIMPLIFICADA ---
+            // --- Lógica de tratamento de resposta dinâmica ---
             if (contentType && contentType.includes('application/json')) {
-                const apiResponse = response.data; // Axios já parseia JSON automaticamente por padrão
-
+                const apiResponse = response.data; 
+                
                 if (apiResponse.status === 'success') {
                     switch (apiResponse.type) {
                         case 'text':
@@ -385,9 +374,32 @@ Basta enviar uma mensagem de texto ou áudio e eu responderei usando IA!`;
                             break;
                         case 'audio':
                             if (apiResponse.response && apiResponse.mime_type) {
-                                // Assume que o 'response' do JSON contém o base64 do áudio
-                                const media = new MessageMedia(apiResponse.mime_type, apiResponse.response, 'response');
-                                await originalMessage.reply(media);
+                                let audioBase64 = apiResponse.response;
+                                const mimeType = apiResponse.mime_type;
+
+                                console.log('DEBUG: Tipo MIME recebido para áudio:', mimeType);
+                                console.log('DEBUG: Comprimento do Base64 recebido para áudio:', audioBase64 ? audioBase64.length : 'null');
+                                
+                                // Opcional: Remover quebras de linha que alguns encoders podem adicionar
+                                if (audioBase64) {
+                                    audioBase64 = audioBase64.replace(/[\n\r]/g, '');
+                                }
+
+                                // Teste simples para verificar se o Base64 é válido (começa com 'data:image/png;base64,' ou similar)
+                                // Embora para áudio geralmente seja apenas a string base64 pura.
+                                // Adicione um prefixo se o whatsapp-web.js precisar (o que geralmente não acontece para MessageMedia)
+                                // if (!audioBase64.startsWith(`data:${mimeType};base64,`)) {
+                                //    audioBase64 = `data:${mimeType};base64,` + audioBase64;
+                                // }
+
+                                try {
+                                    const media = new MessageMedia(mimeType, audioBase64, 'resposta_ia.ogg'); // Adicione um nome de arquivo
+                                    await originalMessage.reply(media);
+                                    console.log('DEBUG: Áudio de resposta enviado com sucesso para o WhatsApp!');
+                                } catch (mediaError) {
+                                    console.error('❌ Erro ao criar ou enviar MessageMedia:', mediaError);
+                                    await originalMessage.reply('Desculpe, não consegui enviar o áudio de resposta. Erro interno ao processar mídia.');
+                                }
                             } else {
                                 console.warn('JSON de áudio de sucesso sem base64 ou mime_type:', apiResponse);
                                 await originalMessage.reply('Recebi um áudio, mas não consegui reproduzi-lo.');
@@ -398,7 +410,9 @@ Basta enviar uma mensagem de texto ou áudio e eu responderei usando IA!`;
                         case 'document':
                             if (apiResponse.response && apiResponse.mime_type) {
                                 // Para outros tipos de mídia (se o Django retornar base64/URL e mimetype)
-                                const media = new MessageMedia(apiResponse.mime_type, apiResponse.response, 'response');
+                                // Lembre-se de que se for URL, MessageMedia não aceita URL diretamente,
+                                // você teria que baixar primeiro e depois criar o Buffer.
+                                const media = new MessageMedia(apiResponse.mime_type, apiResponse.response, 'response_media');
                                 await originalMessage.reply(media);
                             } else {
                                 console.warn(`JSON de ${apiResponse.type} sem base64/URL ou mime_type:`, apiResponse);
@@ -412,20 +426,18 @@ Basta enviar uma mensagem de texto ou áudio e eu responderei usando IA!`;
                     }
                 } else {
                     // Caso a API retorne um JSON de erro (com status: 'error' ou similar)
-                    console.error('Erro detalhado da API (JSON):', apiResponse.message || apiResponse.detail || JSON.stringify(apiResponse));
+                    console.error('❌ Erro detalhado da API (JSON):', apiResponse.message || apiResponse.detail || JSON.stringify(apiResponse));
                     await originalMessage.reply(`Erro da API: ${apiResponse.message || apiResponse.detail || 'Ocorreu um erro desconhecido.'}`);
                 }
             } else {
                 // Caso a API retorne um Content-Type desconhecido ou não suportado diretamente
-                // Ex: Se a API retornar um áudio binário *diretamente* sem JSON.
-                // O Axios geralmente não parseia isso automaticamente, mas `response.data` conterá o binário.
-                console.warn('Resposta da API com Content-Type inesperado ou sem JSON:', contentType);
-                // Tentar logar o conteúdo bruto para depuração
+                console.warn('⚠️ Resposta da API com Content-Type inesperado ou sem JSON:', contentType);
                 if (response.data) {
                     try {
-                        console.warn('Conteúdo bruto da resposta:', Buffer.from(response.data).toString('utf8').substring(0, 500) + '...'); // Limita o log
+                        // Tentar logar o conteúdo bruto para depuração (limitado a 500 chars)
+                        console.warn('Conteúdo bruto da resposta (primeiros 500 chars):', Buffer.from(response.data).toString('utf8').substring(0, 500));
                     } catch (e) {
-                        console.warn('Não foi possível converter resposta para string para log:', e.message);
+                        console.warn('Não foi possível converter resposta para string para log (não é texto):', e.message);
                     }
                 }
                 await originalMessage.reply('Desculpe, recebi uma resposta do servidor que não consigo entender.');
@@ -433,9 +445,7 @@ Basta enviar uma mensagem de texto ou áudio e eu responderei usando IA!`;
             // --- Fim da lógica de tratamento de resposta dinâmica ---
 
         } catch (error) {
-            // Captura erros de rede, erros da API que não foram 401 e erros de reautenticação
             console.error('❌ Erro na comunicação com a API DRF ou reautenticação:', error.message);
-            // Mensagem amigável para o usuário
             await originalMessage.reply('🔧 Desculpe, ocorreu um erro ao comunicar com o servidor. Tente novamente.');
         } finally {
             // Garante que o estado de "digitando" é limpo
@@ -494,4 +504,5 @@ bot.start().catch(error => {
     process.exit(1);
 });
 
-module.exports = WhatsAppOpenAIBot;
+// Não é necessário exportar a classe se este é o script principal.
+// module.exports = WhatsAppOpenAIBot;

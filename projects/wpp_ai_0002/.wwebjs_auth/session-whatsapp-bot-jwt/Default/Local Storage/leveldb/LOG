@@ -1,3 +1,6 @@
-2025/06/19-21:33:02.946 3fb90 Reusing MANIFEST /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session-whatsapp-bot-jwt/Default/Local Storage/leveldb/MANIFEST-000001
-2025/06/19-21:33:02.946 3fb90 Recovering log #4
-2025/06/19-21:33:02.946 3fb90 Reusing old log /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session-whatsapp-bot-jwt/Default/Local Storage/leveldb/000004.log 
+2025/06/23-09:46:08.264 4573 Reusing MANIFEST /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session-whatsapp-bot-jwt/Default/Local Storage/leveldb/MANIFEST-000001
+2025/06/23-09:46:08.264 4573 Recovering log #4
+2025/06/23-09:46:08.265 4573 Reusing old log /home/iratus/Documentos/projeto_porao/projects/wpp_ai_0002/.wwebjs_auth/session-whatsapp-bot-jwt/Default/Local Storage/leveldb/000004.log 
+2025/06/23-09:47:10.802 4609 Level-0 table #8: started
+2025/06/23-09:47:10.815 4609 Level-0 table #8: 13394 bytes OK
+2025/06/23-09:47:10.818 4609 Delete type=0 #4
