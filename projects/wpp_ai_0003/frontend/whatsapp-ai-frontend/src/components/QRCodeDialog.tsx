@@ -28,8 +28,8 @@ interface QRCodeDialogProps {
 }
 
 export function QRCodeDialog({ open, onOpenChange, userId, onConnectionSuccess }: QRCodeDialogProps) {
-    // **AJUSTE AQUI:** Desestruture setIsLoadingQr e setQrCode
-    const { qrCode, currentSessionId, sessionStatus, isLoadingQr, startNewWhatsappSession, setIsLoadingQr, setQrCode } = useWhatsappGateway(userId);
+    // **AJUSTE AQUI:** Use os valores retornados pelo hook, sem a necessidade de desestruturar setters adicionais se eles já forem gerenciados internamente ou expostos diretamente.
+    const { qrCode, currentSessionId, sessionStatus, isLoadingQr, startNewWhatsappSession } = useWhatsappGateway(userId);
     
     // Se for usar Sonner/Toast:
   //  const { toast } = useToast(); // Remova o comentário se for usar
@@ -41,7 +41,7 @@ export function QRCodeDialog({ open, onOpenChange, userId, onConnectionSuccess }
     useEffect(() => {
         if (currentSessionId && sessionStatus[currentSessionId] === 'connected') {
             // Se for usar Sonner/Toast:
-    /*        toast({ // Remova o comentário
+    /* toast({ // Remova o comentário
                 title: "Conexão estabelecida!",
                 description: `Sua conexão "${connectionName}" está ativa.`,
             });*/
@@ -57,10 +57,10 @@ export function QRCodeDialog({ open, onOpenChange, userId, onConnectionSuccess }
                 description: `A sessão ${currentSessionId} falhou: ${sessionStatus[currentSessionId]}. Tente novamente.`,
                 variant: "destructive",
             });*/
-            setIsLoadingQr(false);
-            setQrCode(null);
+            // O hook useWhatsappGateway agora lida com a limpeza do QR code e do estado de carregamento em caso de erros/desconexões,
+            // então não precisamos manipulá-los diretamente aqui.
         }
-    }, [sessionStatus, currentSessionId, onOpenChange, connectionName, onConnectionSuccess, setIsLoadingQr, setQrCode]); // Adicione toast, setIsLoadingQr e setQrCode nas dependências
+    }, [sessionStatus, currentSessionId, onOpenChange, connectionName, onConnectionSuccess]); // Removido toast, setIsLoadingQr e setQrCode das dependências
 
     const handleStartConnection = () => {
         if (!connectionName || !agentName || !agentPrompt) {

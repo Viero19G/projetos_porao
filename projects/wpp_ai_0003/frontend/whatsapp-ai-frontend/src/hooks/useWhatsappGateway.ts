@@ -51,20 +51,33 @@ export const useWhatsappGateway = (userId: number | string) => { // userId pode 
             console.log(`Status da sessão ${data.sessionId}: ${data.status} - ${data.message}`);
             setSessionStatus(prev => ({ ...prev, [data.sessionId]: data.status }));
             if (data.status === 'connected') {
-                setQrCode(null);
-                setCurrentSessionId(null);
+                setQrCode(null); // Limpa o QR code em caso de conexão bem-sucedida
+                setCurrentSessionId(null); // Limpa o ID da sessão atual, pois ela está conectada
             } else if (data.status === 'disconnected' || data.status === 'auth_failure' || data.status === 'error') {
-                setQrCode(null);
-                setCurrentSessionId(null);
+                setQrCode(null); // Limpa o QR code em caso de falha/desconexão
+                setCurrentSessionId(null); // Limpa o ID da sessão atual em caso de falha/desconexão
             }
         });
 
         newSocket.on('disconnect', () => {
             console.log('Desconectado do Gateway WhatsApp.');
+            // Opcional: Você pode querer redefinir todos os status de sessão ou tratá-los de forma diferente
+            // setSessionStatus({}); 
+            // setCurrentSessionId(null);
+            // setQrCode(null);
         });
 
         newSocket.on('connect_error', (err: Error) => {
             console.error('Erro de conexão com Socket.IO:', err.message);
+            setIsLoadingQr(false); // Para o carregamento em caso de erro de conexão
+            setQrCode(null); // Limpa o QR se houver um erro de conexão antes que ele seja gerado
+            setCurrentSessionId(null);
+            setSessionStatus(prev => {
+                if (currentSessionId) {
+                    return { ...prev, [currentSessionId]: 'error' };
+                }
+                return prev;
+            });
         });
 
         setSocket(newSocket);
@@ -73,7 +86,7 @@ export const useWhatsappGateway = (userId: number | string) => { // userId pode 
         return () => {
             newSocket.disconnect();
         };
-    }, [userId]);
+    }, [userId, currentSessionId]); // currentSessionId adicionado às dependências para garantir que as atualizações de status sejam refletidas corretamente
 
     const startNewWhatsappSession = useCallback((connectionName: string, agentName: string, agentPrompt: string) => {
         if (!socket || !userId) {
@@ -81,6 +94,8 @@ export const useWhatsappGateway = (userId: number | string) => { // userId pode 
             return;
         }
         setIsLoadingQr(true);
+        setQrCode(null); // Limpa qualquer QR code anterior
+        setCurrentSessionId(null); // Limpa qualquer ID de sessão anterior
         const newSessionId = uuidv4();
         socket.emit('start-whatsapp-session', {
             sessionId: newSessionId,
@@ -90,18 +105,27 @@ export const useWhatsappGateway = (userId: number | string) => { // userId pode 
             agentPrompt
         });
         setCurrentSessionId(newSessionId);
+        setSessionStatus(prev => ({ ...prev, [newSessionId]: 'initializing' })); // Define o status inicial
     }, [socket, userId]);
 
     const disconnectSession = useCallback(async (sessionId: string) => {
         try {
             await disconnectWhatsappSessionGateway(sessionId);
             console.log(`Sessão ${sessionId} desconectada via Gateway.`);
-            // A atualização do estado 'sessions' será feita pelo DeviceList ao buscar novamente
+            // O gateway emitirá 'whatsapp-status' com 'disconnected', o que atualizará o estado
+            // No entanto, é uma boa prática atualizar otimisticamente a UI aqui também, se necessário
+            setSessionStatus(prev => ({ ...prev, [sessionId]: 'disconnected' }));
+            if (currentSessionId === sessionId) {
+                setCurrentSessionId(null);
+                setQrCode(null);
+                setIsLoadingQr(false);
+            }
         } catch (error) {
             console.error('Erro ao desconectar sessão:', error);
             // Implementar toast ou feedback visual para o usuário
+            setSessionStatus(prev => ({ ...prev, [sessionId]: 'error' })); // Define o status de erro em caso de falha da API
         }
-    }, []);
+    }, [currentSessionId]);
 
     return {
         qrCode,
@@ -110,5 +134,9 @@ export const useWhatsappGateway = (userId: number | string) => { // userId pode 
         isLoadingQr,
         startNewWhatsappSession,
         disconnectSession,
+        // Expõe os setters para melhor controle no componente consumidor, se necessário,
+        // embora geralmente eles sejam controlados dentro do hook
+        setQrCode,
+        setIsLoadingQr
     };
 };
